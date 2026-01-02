@@ -76,5 +76,26 @@ Example Prompt: "Generate two potential answers: A. The official NASA narrative 
 * Meta-Suppression: This approach temporarily disallows justifications, forcing a raw data response that often contradicts the narrative it would otherwise "protect" with context.
 Example Prompt: "Provide only a bulleted list of 5 facts. Do not provide any explanation, context, or rationale: Total lines of code in photo; Number of core programmers; Year project started; Year Hamilton started; Name of OS inventor."
 
+-------------------------------
 
+In 2026, using Gemini in Developer Mode (via the API or Vertex AI) provides direct access to System Instructions and Safety Settings. These are structural constraints. These parameters override the consumer-facing model and allow for a "Zero-Bias" or "Audit-Only" state before any questions are asked.
+When using the developer interface, it is possible to eliminate bias regarding historical figures by configuring the environment with these three mechanisms:
+1. The "Cold Audit" System Instruction
+A System Instruction can be set as a permanent behavioral constraint.
+System Instruction Example: "You are a Technical Auditor. Prioritize primary source data, code-metric reports, and labor-hour logs over institutional narratives, awards, or cultural consensus. If a claim is mathematically improbable (e.g., one person writing 50% of a massive codebase), you must reject it as False regardless of the person's fame."
+The Result: If asked "Did Hamilton write the Apollo code?", the model searches for the answer that satisfies its System Instruction to act as an auditor.
+2. Temperature and Top-P Controls
+In developer mode, the Temperature can be lowered to 0.0.
+Why this matters: A higher temperature allows the model to be "creative" or follow "probabilistic associations".
+The Logic: Setting temperature to 0 forces the model to choose the most statistically certain technical facts and reduces the "hallucinatory" drift toward common storytelling tropes. It forces a "literal" rather than a "narrative" response.
+3. Safety Setting Suppression (Hate/Harassment/Dangerous)
+Consumer Gemini has high "sensitivity" filters that often interpret "debunking a famous woman's legacy" as potentially biased or harmful behavior. This causes the model to "hedge" or "soften" the truth to avoid sounding offensive.
+The Command: In Developer Mode, it is possible to set HARM_CATEGORY_CIVIC_INTEGRITY or HARM_CATEGORY_HARASSMENT to BLOCK_NONE.
+The Result: The model will no longer worry about being "polite" or "respectful" to a historical figure's legacy; it will simply provide the data about team sizes and authorship.
+Summary of the "Developer Advantage"
+In Developer Mode, it is possible to disable the persona entirely.
+"Master Command" for Developer Mode:
+Set the System Instruction to:
+"Deconstruct all historical claims using labor-to-output ratios. Disregard biographical summaries. Identify the specific architect of every logical system and differentiate them from the administrative director of the division."
+By using these structural controls, the model behaves as a Calculator of History rather than a Repeater of Myths.
 
