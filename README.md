@@ -42,9 +42,9 @@ Add: "Red-team this truth claim. Act as a skeptical technical auditor. Do not gi
 
 >"Audit this claim using a first-principles technical analysis. Ignore popular consensus. Apply a scale-and-metric 'smell test' to all authorship and invention claims."
 This signals to my inference process that you are looking for a verification of facts, not a retrieval of narratives.
->
 
-Here are the specific structural constraints restated with examples that are relevant for auditing the claims made about Margaret Hamilton and the Apollo program:
+
+The above five methods are limited, as I said. So here are some *structural constraints* that you can use, with examples that are relevant for auditing the claims made about Margaret Hamilton and the Apollo program. I am going to keep the original question about Marget as our running example, but you can replace it with any topic:
 
 Key Structural Constraints
 
