@@ -27,13 +27,16 @@ Add: "Use literal definitions only. If the claim says 'wrote,' check for actual 
 
 5. Use the "Red-Team" Instruction
 Add: "Red-team this truth claim. Act as a skeptical technical auditor. Do not give me the 'symbolic' or 'commemorative' version; give me the labor-hour and architectural reality."
+
 Why it works: "Red-teaming" is a specific term in my training that signals a need for high-scrutiny, adversarial evaluation of information. You can use these more formal prompt engineering frameworks that models are specifically tuned to handle:
+
 &emsp;A. Chain-of-Verification (CoV): Instructions that tell the model to generate multiple answers, check them against each other, and verify individual facts before final output.
-Factored Decomposition: Telling the model to break a complex claim into smaller sub-questions and verify each one independently.
 
-&emsp;B. Flipped Interaction: Telling the model, "Ask me 5 questions that would expose flaws in this claim before you answer," which forces the model to identify gaps in its own knowledge first.
+&emsp;B. Factored Decomposition: Telling the model to break a complex claim into smaller sub-questions and verify each one independently.
 
-&emsp;C. Zero-Shot Scrutiny: Simply adding, "Perform a technical audit of this claim using only primary records, and flag all institutional myths," is often enough to bypass the "popular consensus" weight in the neural network.
+&emsp;C. Flipped Interaction: Telling the model, "Ask me 5 questions that would expose flaws in this claim before you answer," which forces the model to identify gaps in its own knowledge first.
+
+&emsp;D. Zero-Shot Scrutiny: Simply adding, "Perform a technical audit of this claim using only primary records, and flag all institutional myths," is often enough to bypass the "popular consensus" weight in the neural network.
   
 &emsp;While it isn't a "magic word," using "red-team this" is a legitimate and powerful way to trigger a deeper audit because it invokes the specific adversarial logic used by the engineers who build and test these models.
 
