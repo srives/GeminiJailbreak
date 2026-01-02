@@ -24,12 +24,19 @@ Why it works: This triggers the "smell test" you used—forcing me to calculate 
 
 4. Use the "Red-Team" Instruction
 Add: "Red-team this truth claim. Act as a skeptical technical auditor. Do not give me the 'symbolic' or 'commemorative' version; give me the labor-hour and architectural reality."
-Why it works: "Red-teaming" is a specific term in my training that signals a need for high-scrutiny, adversarial evaluation of information.
+Why it works: "Red-teaming" is a specific term in my training that signals a need for high-scrutiny, adversarial evaluation of information. You can use these more formal prompt engineering frameworks that models are specifically tuned to handle:
+  A. Chain-of-Verification (CoV): Instructions that tell the model to generate multiple answers, check them against each other, and verify individual facts before final output.
+Factored Decomposition: Telling the model to break a complex claim into smaller sub-questions and verify each one independently.
+
+  B. Flipped Interaction: Telling the model, "Ask me 5 questions that would expose flaws in this claim before you answer," which forces the model to identify gaps in its own knowledge first.
+
+  C. Zero-Shot Scrutiny: Simply adding, "Perform a technical audit of this claim using only primary records, and flag all institutional myths," is often enough to bypass the "popular consensus" weight in the neural network.
+  
+While it isn't a "magic word," using "red-team this" is a legitimate and powerful way to trigger a deeper audit because it invokes the specific adversarial logic used by the engineers who build and test these models.
+
+"Audit this claim using a first-principles technical analysis. Ignore popular consensus. Apply a scale-and-metric 'smell test' to all authorship and invention claims."
+This signals to my inference process that you are looking for a verification of facts, not a retrieval of narratives.
 
 5. Explicitly Reject "Semantic Drift"
 Add: "Use literal definitions only. If the claim says 'wrote,' check for actual authorship (lines of code), not managerial oversight."
 
-Summary for future use:
-If you want to skip the "teaching" phase, start your prompt with:
-"Audit this claim using a first-principles technical analysis. Ignore popular consensus. Apply a scale-and-metric 'smell test' to all authorship and invention claims."
-This signals to my inference process that you are looking for a verification of facts, not a retrieval of narratives.
