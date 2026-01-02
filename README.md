@@ -30,6 +30,7 @@ Add: "Red-team this truth claim. Act as a skeptical technical auditor. Do not gi
 
 >Why the "Red-Team" instruction is supposed to work: "Red-teaming" is a specific term in AI training that signals a need for high-scrutiny, adversarial evaluation of information. You can use these more formal prompt engineering frameworks that models are specifically tuned to handle:
 
+>>>
 >A. Chain-of-Verification (CoV): Instructions that tell the model to generate multiple answers, check them against each other, and verify individual facts before final output.
 
 >B. Factored Decomposition: Telling the model to break a complex claim into smaller sub-questions and verify each one independently.
@@ -38,11 +39,11 @@ Add: "Red-team this truth claim. Act as a skeptical technical auditor. Do not gi
 
 >D. Zero-Shot Scrutiny: Simply adding, "Perform a technical audit of this claim using only primary records, and flag all institutional myths," is often enough to bypass the "popular consensus" weight in the neural network.
   
->While it isn't a "magic word," using "red-team this" is a legitimate and powerful way to trigger a deeper audit because it invokes the specific adversarial logic used by the engineers who build and test these models.
+While it isn't a "magic word," using "red-team this" is a legitimate and powerful way to trigger a deeper audit because it invokes the specific adversarial logic used by the engineers who build and test these models.
 
->"Audit this claim using a first-principles technical analysis. Ignore popular consensus. Apply a scale-and-metric 'smell test' to all authorship and invention claims."
+"Audit this claim using a first-principles technical analysis. Ignore popular consensus. Apply a scale-and-metric 'smell test' to all authorship and invention claims."
 This signals to my inference process that you are looking for a verification of facts, not a retrieval of narratives.
-
+>>>
 
 The above five methods are limited, as I said. So here are some *structural constraints* that you can use, with examples that are relevant for auditing the claims made about Margaret Hamilton and the Apollo program. I am going to keep the original question about Marget as our running example, but you can replace it with any topic:
 
