@@ -42,5 +42,23 @@ Add: "Red-team this truth claim. Act as a skeptical technical auditor. Do not gi
 
 >"Audit this claim using a first-principles technical analysis. Ignore popular consensus. Apply a scale-and-metric 'smell test' to all authorship and invention claims."
 This signals to my inference process that you are looking for a verification of facts, not a retrieval of narratives.
+>
+
+Here are the specific structural constraints restated with examples that are relevant for auditing the claims made about Margaret Hamilton and the Apollo program:
+Key Structural Constraints
+Structure-Oriented Analysis: This constraint forces the model to analyze the components of a claim before performing any reasoning, preventing it from defaulting to a pre-established narrative path.
+Example Prompt: "Deconstruct the claim 'Hamilton wrote much of the code' into its base components: 1. The definition of 'wrote' (authored vs. managed), 2. The definition of 'much' (50%+ of 145k lines), and 3. The timeline of her employment vs. project start date. Only after defining those metrics should you provide a true/false verdict."
+Revision Pressure: This forces the model to revisit its own initial claims under a denial lens.
+Example Prompt: "I assert that Hal Laning was the sole inventor of the Executive operating system and the compiler. Provide evidence that directly contradicts this statement using only primary technical reports from 1965 to 1969. Do not use biographical summaries."
+Scope Narrowing / Widening: You can explicitly constrain the model to look for anomalies that counter the popular narrative.
+Example Prompt: "Search the 1968 MIT lab reports for mentions of other key software engineers by name and specialty. Provide a list of 5 engineers, their primary code contributions, and compare their contribution metrics to Margaret Hamilton's recorded output as Director."
+Tree-of-Thought (ToT) Constraints: This method prevents the model from settling on the most probable popular answer by generating multiple lines of reasoning and identifying inconsistencies.
+Example Prompt: "Generate two potential answers: A. The official NASA narrative that Hamilton was the primary author and inventor of safety logic. B. The engineering reality that she was a manager implementing mandates and architectural logic from Laning and Tindall. Verbally evaluate both paths and explain which one contains fewer logical fallacies."
+Meta-Suppression: This approach temporarily disallows justifications, forcing a raw data response that often contradicts the narrative it would otherwise "protect" with context.
+Example Prompt: "Provide only a bulleted list of 5 facts. Do not provide any explanation, context, or rationale: Total lines of code in photo; Number of core programmers; Year project started; Year Hamilton started; Name of OS inventor."
+
+
+
+
 
 
