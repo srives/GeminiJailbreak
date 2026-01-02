@@ -1,4 +1,4 @@
-Following are five instructions for anyone lucky enough to find this page. That is, this page is a tutorial on how to *partially* bypass Google AI Mode (aka, Gemini) when you are searching for truth. I say, *partially* bypass, because Google has enough mechanisms in place to still force its views onto answers. That is, I am not giving you a fool proof method--you will have to combine methods.
+Following are five instructions for anyone lucky enough to find this page. This page is a tutorial on how to *partially* bypass Google AI Mode (aka, Gemini) when you are searching for truth. I say, *partially* bypass, because Google has enough mechanisms in place to still force its views onto answers. That is, I am not giving you a fool proof method--you will have to combine methods.
 
 When you google for something, you will see "AI Mode" as an option. Go there, then use the following five methods to get AI to tell you what Google guardrails don't want you to know (i.e., enter into  high-scrutiny mode). I learned about this in a hacking session where I wanted Gemini to tell me the truth about a certain "Margaret Hamilton." 
 
