@@ -4,7 +4,7 @@ When you google for something, you will see "AI Mode" as an option. Go there, th
 
           "Margaret Hamilton, who, as a young woman in the 1960s wrote much of the software that guided Apollo to the Moon."
 
-Who she is, and the truth claims are not important at this moment, just showing you how to get around the lies and to to the truth is my point, but you can [see the full transcript here](https://github.com/srives/GeminiJailbreak/HowToAuditAI.pdf).
+Who she is, and the truth claims are not important at this moment, just showing you how to get around the lies and to to the truth is my point, but you can [see the full transcript here](./HowToAuditAI.pdf).
 
 To trigger a high-scrutiny mode and force me to move past institutional consensus into technical verification, you should use "adversarial" or "metric-based" framing. LLMs are tuned to be "agreeable" by default, but you can override this by explicitly requesting a technical audit or first-principles analysis.
 
